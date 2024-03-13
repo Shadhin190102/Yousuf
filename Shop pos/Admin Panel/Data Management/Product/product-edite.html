@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .product-details {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .product-photo {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .details-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .details-list li {
+      margin-bottom: 10px;
+    }
+
+    .edit-input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .accept-btn,
+    .cancel-btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .accept-btn {
+      background-color: #4CAF50;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .cancel-btn {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-details">
+    <img class="product-photo" src="product_photo.jpg" alt="Product Photo">
+    
+    <ul class="details-list">
+      <li><strong>Product Name:</strong> <input type="text" class="edit-input" value="Product A"></li>
+      <li><strong>Weight:</strong> <input type="text" class="edit-input" value="500g"></li>
+      <li><strong>Material:</strong> <textarea class="edit-input">Material A, Material B, Material C</textarea></li>
+      <li><strong>Disease:</strong> <textarea class="edit-input">Disease X, Disease Y, Disease Z</textarea></li>
+      <li><strong>Age:</strong> <input type="text" class="edit-input" value="Suitable for all ages"></li>
+      <li><strong>Company Name:</strong> <input type="text" class="edit-input" value="Company X"></li>
+      <li><strong>Product Type:</strong> <input type="text" class="edit-input" value="Type A"></li>
+      <li><strong>Price:</strong> <input type="text" class="edit-input" value="$50.00"></li>
+      <li><strong>Discount:</strong> <input type="text" class="edit-input" value="10%"></li>
+      <li><strong>Publication Date:</strong> <input type="text" class="edit-input" value="January 1, 2024"></li>
+      <br>
+      <input type="file" accept="image/*"> 
+    </ul>
+    <br><br>
+    <button class="accept-btn">Accept</button>
+    <button class="cancel-btn">Cancel</button>
+  </div>
+</body>
+</html>

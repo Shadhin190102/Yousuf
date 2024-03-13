@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Entry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .title-panel {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #f2f2f2;
+    }
+
+    table tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    table tbody tr:hover {
+      background-color: #ddd;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin-right: 5px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button.accept {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    button.cancel {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="title-panel">
+    <h1>Panel Entry</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Company Name</th>
+          <th>Details</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Product A</td>
+            <td>Company X</td>
+            <td><a href="next_page.html">Details</a></td>
+            <td>
+              <button class="accept">Accept</button>
+              <button class="cancel">Cancel</button>
+            </td>
+          </tr><tr>
+            <td>Product A</td>
+            <td>Company X</td>
+            <td><a href="next_page.html">Details</a></td>
+            <td>
+              <button class="accept">Accept</button>
+              <button class="cancel">Cancel</button>
+            </td>
+          </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

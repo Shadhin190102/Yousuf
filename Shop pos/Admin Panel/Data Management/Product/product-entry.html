@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product Entry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+        }
+
+        label {
+            font-weight: bold;
+            color: #666666;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input.error {
+            border-color: red;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus,
+        input[type="file"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>New Product Entry</h2>
+        <form id="productEntryForm" action="#" method="POST" enctype="multipart/form-data">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="productMaterial">Product Material:</label>
+            <select id="productMaterial" name="productMaterial[]" multiple required>
+                <option value="Material 1">Material 1</option>
+                <option value="Material 2">Material 2</option>
+                <option value="Material 3">Material 3</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="productType">Product Type:</label>
+            <input type="text" id="productType" name="productType" required>
+
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" required>
+
+            <label for="ageStart">Age Start:</label>
+            <input type="number" id="ageStart" name="ageStart" required>
+
+            <label for="ageEnd">Age End:</label>
+            <input type="number" id="ageEnd" name="ageEnd" required>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="discount">Discount:</label>
+            <input type="number" id="discount" name="discount">
+
+            <label for="publishedDate">Published Date:</label>
+            <input type="date" id="publishedDate" name="publishedDate" required>
+
+            <label for="disease">Disease:</label>
+            <select id="disease" name="disease[]" multiple required>
+                <option value="Disease 1">Disease 1</option>
+                <option value="Disease 2">Disease 2</option>
+                <option value="Disease 3">Disease 3</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
